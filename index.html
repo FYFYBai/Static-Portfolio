@@ -714,18 +714,70 @@
               >
                 <div class="portfolio-card">
                   <div class="portfolio-image">
-                    <img
-                      alt="Online Store Front"
-                      class="img-fluid"
-                      loading="lazy"
-                      src="assets/img/portfolio/storefront.png"
-                    />
+                    <!-- Swiper Carousel -->
+                    <div class="init-swiper">
+                      <!-- Swiper Config -->
+                      <script class="swiper-config" type="application/json">
+                        {
+                          "loop": true,
+                          "autoplay": {
+                            "delay": 3000,
+                            "disableOnInteraction": false
+                          },
+                          "slidesPerView": 1,
+                          "spaceBetween": 10
+                        }
+                      </script>
+
+                      <!-- Swiper Slides -->
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/store1.png"
+                            class="img-fluid"
+                            alt="Online Store View 1"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/store2.png"
+                            class="img-fluid"
+                            alt="Online Store View 2"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/store3.png"
+                            class="img-fluid"
+                            alt="Online Store View 3"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Overlay Buttons -->
                     <div class="portfolio-overlay">
                       <div class="portfolio-actions">
+                        <!-- Hidden for lightbox gallery -->
+                        <a
+                          href="assets/img/portfolio/store2.png"
+                          class="glightbox d-none"
+                          data-gallery="store-gallery"
+                        ></a>
+                        <a
+                          href="assets/img/portfolio/store3.png"
+                          class="glightbox d-none"
+                          data-gallery="store-gallery"
+                        ></a>
+
+                        <!-- Main preview -->
                         <a
                           class="glightbox preview-link"
-                          data-gallery="portfolio-gallery-web"
-                          href="assets/img/portfolio/storefront.png"
+                          data-gallery="store-gallery"
+                          href="assets/img/portfolio/store1.png"
                         >
                           <i class="bi bi-eye"></i>
                         </a>
@@ -738,6 +790,8 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- Portfolio Content -->
                   <div class="portfolio-content">
                     <span class="category">Java / Spring</span>
                     <h3>Online Store Front</h3>
@@ -783,7 +837,7 @@
                     </div>
                   </div>
                   <div class="portfolio-content">
-                    <span class="category">Web</span>
+                    <span class="category">Web App</span>
                     <h3>Restaurant Ordering System</h3>
                     <p>
                       Live cart-based restaurant ordering interface using AJAX

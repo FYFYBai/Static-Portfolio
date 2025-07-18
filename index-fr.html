@@ -609,10 +609,11 @@
                     <span class="category">Full Stack</span>
                     <h3>Système de gestion de garderie</h3>
                     <p>
-                      Built a secure full-stack daycare management platform with
-                      user registration, child enrollment, role-based access,
-                      email activation, and Stripe payment integration.<br />
-                      <strong>Tech Stack: </strong>
+                      Créé une plateforme de gestion de garderie sécurisée en
+                      full-stack avec inscription des utilisateurs, inscription
+                      des enfants, accès basé sur les rôles, activation par
+                      email et intégration de paiement Stripe.<br />
+                      <strong>Technologies utilisées : </strong>
                       PHP 8.2, Slim Framework, MySQL, Stripe, Twig
                     </p>
                   </div>
@@ -701,11 +702,12 @@
                     <span class="category">Web App</span>
                     <h3>Application de suivi de livres</h3>
                     <p>
-                      Responsive book discovery and management platform with
-                      real-time search, modal previews, and favorites. Includes
-                      dark/light mode toggle and URL-based query sharing.<br />
-                      <strong>Tech Stack:</strong> React, React Router, Tailwind
-                      CSS, Google Books API, Axios, Vercel
+                      Plateforme responsive de découverte et gestion de livres
+                      avec recherche en temps réel, aperçus modaux et favoris.
+                      Inclut un basculement entre mode sombre/clair et partage
+                      de requêtes basé sur l'URL.<br />
+                      <strong>Technologies utilisées :</strong> React, React
+                      Router, Tailwind CSS, Google Books API, Axios, Vercel
                     </p>
                   </div>
                 </div>
@@ -715,18 +717,70 @@
               >
                 <div class="portfolio-card">
                   <div class="portfolio-image">
-                    <img
-                      alt="Online Store Front"
-                      class="img-fluid"
-                      loading="lazy"
-                      src="assets/img/portfolio/storefront.png"
-                    />
+                    <!-- Swiper Carousel -->
+                    <div class="init-swiper">
+                      <!-- Swiper Config -->
+                      <script class="swiper-config" type="application/json">
+                        {
+                          "loop": true,
+                          "autoplay": {
+                            "delay": 3000,
+                            "disableOnInteraction": false
+                          },
+                          "slidesPerView": 1,
+                          "spaceBetween": 10
+                        }
+                      </script>
+
+                      <!-- Swiper Slides -->
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/store1.png"
+                            class="img-fluid"
+                            alt="Online Store View 1"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/store2.png"
+                            class="img-fluid"
+                            alt="Online Store View 2"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="assets/img/portfolio/store3.png"
+                            class="img-fluid"
+                            alt="Online Store View 3"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Overlay Buttons -->
                     <div class="portfolio-overlay">
                       <div class="portfolio-actions">
+                        <!-- Hidden for lightbox gallery -->
+                        <a
+                          href="assets/img/portfolio/store2.png"
+                          class="glightbox d-none"
+                          data-gallery="store-gallery"
+                        ></a>
+                        <a
+                          href="assets/img/portfolio/store3.png"
+                          class="glightbox d-none"
+                          data-gallery="store-gallery"
+                        ></a>
+
+                        <!-- Main preview -->
                         <a
                           class="glightbox preview-link"
-                          data-gallery="portfolio-gallery-web"
-                          href="assets/img/portfolio/storefront.png"
+                          data-gallery="store-gallery"
+                          href="assets/img/portfolio/store1.png"
                         >
                           <i class="bi bi-eye"></i>
                         </a>
@@ -739,15 +793,18 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- Portfolio Content -->
                   <div class="portfolio-content">
                     <span class="category">Java / Spring</span>
-                    <h3>Boutique en ligne</h3>
+                    <h3>Online Store Front</h3>
                     <p>
-                      Full-featured e-commerce system with Spring Boot backend
-                      and JavaFX frontend. Includes auth, reviews, discount
-                      logic, and JUnit/Mockito testing.
+                      Système de commerce électronique complet avec backend
+                      Spring Boot et frontend JavaFX. Inclut l'authentification,
+                      les avis, la logique de réduction et les tests
+                      JUnit/Mockito.
                       <br />
-                      <strong>Tech Stack: </strong>
+                      <strong>Technologies utilisées : </strong>
                       Java 21, Spring Boot, Spring Security, Spring Data JPA,
                       JavaFX, Maven, JUnit, Mockito
                     </p>
@@ -784,13 +841,14 @@
                     </div>
                   </div>
                   <div class="portfolio-content">
-                    <span class="category">Web</span>
+                    <span class="category">Web App</span>
                     <h3>Système de commande pour restaurant</h3>
                     <p>
-                      Live cart-based restaurant ordering interface using AJAX
-                      calls and session-based user flows.
+                      Interface de commande de restaurant basée sur un panier en
+                      direct utilisant des appels AJAX et des flux utilisateur
+                      basés sur les sessions.
                       <br />
-                      <strong>Tech Stack: </strong>
+                      <strong>Technologies utilisées : </strong>
                       HTML5, CSS3, JS, jQuery, MySQL
                     </p>
                   </div>
